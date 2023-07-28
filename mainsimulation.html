@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simulator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        function homepagevoice2(){
+      setTimeout(function()
+      {
+        var x=document.getElementById('pre9');
+        x.play();
+
+      },1000);
+     }
+    
+    function slct_tec2()
+
+{
+   
+  tec2 = document.getElementById("selectlist2").value;
+ if (tec2=="1") {
+
+  document.getElementById("canvas4").style.visibility="hidden";
+  document.getElementById("canvas5").style.visibility="visible";
+
+//   setTimeout(function()
+//       {
+
+//         var x= document.getElementById('can5_amt');
+//         x.play();
+
+    //   },200);
+      setTimeout(function()
+         {
+            var x=document.getElementById('pre6');
+            x.play();
+
+      },1000);
+
+  setTimeout(function()
+      {
+
+        document.getElementById("in_btn1").style.visibility="visible";
+        document.getElementById("in_skip_btn").style.visibility="visible";
+
+      },5000);
+  
+  document.getElementById("titleh3").innerHTML="Identification of Unknown Components Using Spectroscopic Liquid Techniques";
+ }
+
+
+ if (tec2=="2") {
+
+
+  document.getElementById("canvas4").style.visibility="hidden";
+  document.getElementById("canvas6").style.visibility="visible";
+  
+  document.getElementById("titleh3").innerHTML="Identification of Unknown Components Using Spectroscopic Solid Techniques";
+ 
+ setTimeout(function()
+{
+            var x=document.getElementById('pre7');
+            x.play();
+
+      },200);
+      setTimeout(function()
+{
+            var x=document.getElementById('sample2');
+            x.play();
+
+      },7000);
+      
+  setTimeout(function()
+      {
+
+        document.getElementById("so_btn1").style.visibility="visible";
+        document.getElementById("so_skip_btn").style.visibility="visible";
+
+      },5000);
+
+
+ } 
+
+}
+
+ function enterlab()
+        {
+            document.getElementById("canvas2").style.visibility="visible";
+            document.getElementById("canvas1").style.visibility="hidden";
+            setTimeout(function()
+         {
+            var x=document.getElementById('pre2');
+            x.play();
+
+      },1000);
+        }
+        function Next(){
+            document.getElementById("canvas3").style.visibility="visible";
+            document.getElementById("canvas2").style.visibility="hidden";
+            setTimeout(function()
+         {
+            var x=document.getElementById('pre3');
+            x.play();
+
+      },1000);
+          
+
+        }
+        function Next1(){
+            document.getElementById("canvas4").style.visibility="visible";
+            document.getElementById("canvas3").style.visibility="hidden";
+             setTimeout(function()
+         {
+           var x=document.getElementById('pre4');
+            x.play();
+            setTimeout(function()
+             {
+            var x=document.getElementById('pre5');
+            x.play();
+
+            },3500);
+
+      },1000);
+
+        }
+        function Next2(){
+            document.getElementById("canvas5").style.visibility="visible";
+            document.getElementById("canvas4").style.visibility="hidden";
+            document.getElementById("sampleappear").style.visibility="visible";
+
+        }
+        function Next3(){
+         
+            document.getElementById("canvas6").style.visibility="visible";
+            document.getElementById("canvas5").style.visibility="hidden";
+            document.getElementById("sampleappear").style.visibility="visible";
+            
+        }
+
+        function sample(){
+            setTimeout(function()
+      {
+        var x=document.getElementById('tube');
+        x.play();
+
+      },1200);
+            document.getElementById("sampleappear").style.visibility="hidden";
+            document.getElementById("img1").style.visibility="visible";
+            document.getElementById("step1").style.visibility="hidden";
+            document.getElementById("step2").style.visibility="visible";
+            document.getElementById("tubeappear").style.visibility="visible";
+            
+        }
+        function Tube(){
+            setTimeout(function()
+      {
+        var x=document.getElementById('desicator');
+        x.play();
+
+      },1200);
+            document.getElementById("tubeappear").style.visibility="hidden";
+            document.getElementById("img2").style.visibility="visible";
+            document.getElementById("step2").style.visibility="hidden";
+            document.getElementById("step3").style.visibility="visible";
+            document.getElementById("desiappear").style.visibility="visible";
+        
+        }
+        function Desicators(){
+            setTimeout(function()
+      {
+        var x=document.getElementById('infra');
+        x.play();
+
+      },1200);
+            document.getElementById("desiappear").style.visibility="hidden";
+            document.getElementById("img3").style.visibility="visible";
+            document.getElementById("step3").style.visibility="hidden";
+            document.getElementById("step4").style.visibility="visible";
+            document.getElementById("spectappear").style.visibility="visible";
+        }
+        function InfraredSpec(){
+            setTimeout(function()
+      {
+        var x=document.getElementById('cap111');
+        x.play();
+
+      },1000);
+            
+            document.getElementById("spectappear").style.visibility="hidden";
+            document.getElementById("img4").style.visibility="visible";
+            document.getElementById("step4").style.visibility="hidden";
+            document.getElementById("step5").style.visibility="visible";
+            document.getElementById('dopen').style.visibility="visible";
+        }
+        function opendesi()
+        { 
+            setTimeout(function()
+      {
+        var x=document.getElementById('cork11');
+        x.play();
+
+      },3000);
+          
+            document.getElementById("step5").style.visibility="hidden";
+            document.getElementById("step6").style.visibility="visible";
+            document.getElementById('dopen').style.visibility="hidden";
+            document.getElementById('img3').src="images/desiccatordwn.png";
+            document.getElementById('dcap').style.visibility="visible";
+            document.getElementById('dside').style.visibility="visible";
+           
+        }
+        function moveside()
+        {
+            
+            document.getElementById('dside').style.visibility="hidden";
+            document.getElementById("step6").style.visibility="hidden";
+            document.getElementById("dcap").style.animation="moveside 3s forwards";  
+            document.getElementById("step7").style.visibility="visible";
+            document.getElementById('cork').style.visibility="visible";
+        }
+function movecapsample()
+    {
+        setTimeout(function()
+      {
+        var x=document.getElementById('sample11');
+        x.play();
+
+      },3000);
+        document.getElementById("step7").style.visibility="hidden";
+        document.getElementById('cork').style.visibility="hidden";
+        // document.getElementById("step6").style.visibility="hidden";
+       
+         document.getElementById('img1').style.visibility="hidden";
+         document.getElementById('wcap').style.visibility="visible";
+        setTimeout (function(){
+            document.getElementById('cap').style.visibility="visible"},0010);
+        document.getElementById('cap').style.animation="movecap 4s forwards";
+        document.getElementById("step8").style.visibility="visible";
+        document.getElementById('samplehalf').style.visibility="visible";}
+        
+        
+        function movesampledeci()
+        {
+            setTimeout(function()
+      {
+        var x=document.getElementById('dcap11');
+        x.play();
+
+      },3000);
+            document.getElementById('closedesi').style.visibility="visible";
+            document.getElementById('samplehalf').style.visibility="hidden";
+            // document.getElementById("step7").style.visibility="hidden";
+            document.getElementById("step8").style.visibility="hidden";
+            document.getElementById('wcap').style.animation="movesampledeci 4s forwards";
+            document.getElementById("step9").style.visibility="visible";
+            document.getElementById('hlfd').style.visibility="visible";
+            
+        }
+        function closedesi()
+        {
+            setTimeout(function()
+      {
+        var x=document.getElementById('24hrs');
+        x.play();
+
+      },3700);
+            document.getElementById("step9").style.visibility="hidden";
+            document.getElementById('closedesi').style.visibility="hidden";
+            document.getElementById('dcap').style.animation="close 4s forwards";
+           
+            setTimeout(function(){
+                document.getElementById("step10").style.visibility="visible";
+            document.getElementById('clock').style.visibility="visible";},4000);
+            
+            setTimeout(function(){
+                
+                document.getElementById('clock').style.visibility="hidden";
+                document.getElementById("step10").style.visibility="hidden";
+            document.getElementById("step11").style.visibility="visible";
+                document.getElementById('dopenagain').style.visibility="visible";},12000);
+                setTimeout(function()
+         {
+            var x=document.getElementById('desiagain');
+            x.play();
+
+      },11000);
+               
+               }
+        function opendesiagain()
+        {
+            
+
+            document.getElementById("step11").style.visibility="hidden";
+            document.getElementById('dopenagain').style.visibility="hidden";
+            document.getElementById('img3').src="images/desiccatordwn.png";
+            
+            document.getElementById('dcap1').style.visibility="visible";
+            document.getElementById('dcap').style.visibility="hidden";
+            document.getElementById("step12").style.visibility="visible";
+            document.getElementById('dsideagain').style.visibility="visible";
+            
+        }
+        function movesideagain()
+        {
+            setTimeout(function()
+         {
+            var x=document.getElementById('outsample');
+            x.play();
+
+      },1000);
+            document.getElementById("step12").style.visibility="hidden";
+            document.getElementById('dsideagain').style.visibility="hidden";
+           document.getElementById("dcap1").style.animation="moveside 3s forwards";
+            document.getElementById("step13").style.visibility="visible"; 
+          document.getElementById('sampleout').style.visibility="visible";
+             
+          setTimeout(function()
+         {
+            var x=document.getElementById('closecap');
+            x.play();
+
+         },7000);
+            
+        }
+        function closedesiagain()
+        {
+           
+             
+            document.getElementById("step14").style.visibility="hidden";
+            document.getElementById('closedesiagain').style.visibility="hidden";
+            
+            document.getElementById('dcap1').style.animation="close 4s forwards";
+            document.getElementById("step15").style.visibility="visible";
+            document.getElementById('openpectro').style.visibility="visible";
+            
+            
+            // document.getElementById("step16").style.visibility="visible";
+        }
+        function sampleout()
+        {
+            document.getElementById("step13").style.visibility="hidden";
+            document.getElementById('wcap').style.animation="sampleout1 4s forwards";         
+            document.getElementById("step14").style.visibility="visible";
+            document.getElementById('sampleout').style.visibility="hidden";
+            document.getElementById('closedesiagain').style.visibility="visible";
+            
+            setTimeout(function()
+         {
+            var x=document.getElementById('IR');
+            x.play();
+
+         },10000);
+         
+        }
+        function openspectro()
+        {
+            
+            document.getElementById("step15").style.visibility="hidden";
+            document.getElementById("step16").style.visibility="visible";
+            document.getElementById('openpectro').style.visibility="hidden";
+            document.getElementById('img4').src="images/infrared.png";
+            document.getElementById('infracap').style.visibility="visible";
+            document.getElementById('rotate').style.visibility="visible";
+            
+            
+        }
+        function rotate()
+        {
+            
+            document.getElementById("step16").style.visibility="hidden";
+            // document.getElementById("step17").style.visibility="visible";
+            document.getElementById('rotate').style.visibility="hidden";
+            document.getElementById('infracap').style.animation="rotatecap 3s forwards";
+            document.getElementById('transforzoom').style.visibility="visible";
+            document.getElementById("step17").style.visibility="visible";
+        }
+        function zoom()
+        { 
+            setTimeout(function()
+         {
+            var x=document.getElementById('slide');
+            x.play();
+
+         },0500);
+        
+            document.getElementById("step17").style.visibility="hidden";
+            
+            document.getElementById('transforzoom').style.visibility="visible";
+            
+             document.getElementById('nobe').style.visibility="visible";
+        document.getElementById('silversomething').style.visibility="visible";
+            document.getElementById('inside').style.visibility="visible";
+            document.getElementById('fornobe').style.visibility="visible";
+            document.getElementById("step18").style.visibility="visible";
+        }
+        function movesilverthing()
+        {
+            document.getElementById("step18").style.visibility="hidden";
+            document.getElementById('fornobe').style.visibility="hidden";
+            document.getElementById('silversomething').style.animation="silvermove 3s forwards";
+            document.getElementById('dropperinsample').style.visibility="visible";
+            document.getElementById("step19").style.visibility="visible";
+            setTimeout(function()
+         {
+            var x=document.getElementById('tube');
+            x.play();
+
+         },3000);
+        }
+        function movedropper1()
+        {
+            document.getElementById('img1').style.visibility="hidden";
+            document.getElementById('sampleimg2').style.visibility="visible";
+            document.getElementById('dropperinsample').style.visibility="hidden";
+            document.getElementById('dropper').style.visibility="visible";
+            document.getElementById('standpart1').style.visibility="visible";
+            document.getElementById('standpart2').style.visibility="visible";
+            document.getElementById('dropper').style.animation="dropper2sample 3s forwards";
+            document.getElementById('stand').style.visibility="visible";
+            document.getElementById('img2').style.visibility="hidden";
+            document.getElementById('samplein').style.visibility="visible";
+        }
+        function sampleindropper()
+        {
+            document.getElementById('samplein').style.visibility="hidden";
+            document.getElementById('dropper').style.visibility="hidden";
+            document.getElementById('droppersucked').style.visibility="visible";
+            document.getElementById('dropperfill').style.visibility="visible";
+            document.getElementById('dropperfill').style.animation="filling 2s forwards";
+            document.getElementById('sample2spect').style.visibility="visible";
+        
+          
+        }
+        function sample2spect()
+        {
+            document.getElementById('sample2spect').style.visibility="hidden";
+            document.getElementById('dropperfill').style.visibility="hidden";
+            document.getElementById('droppersucked').src="images/dropperwsample.png";
+            document.getElementById('droppersucked').style.animation="putspect 4s forwards";
+            document.getElementById('droptospect').style.visibility="visible";
+        }
+        function pour()
+        {
+            document.getElementById('droptospect').style.visibility="hidden";
+            document.getElementById('droppersucked').src="images/dropper.png";
+            document.getElementById('drop').style.visibility="visible";
+            document.getElementById('drop').style.animation="drip 3s forwards";
+            setTimeout(function(){
+            document.getElementById('drop').style.visibility="hidden";},2900);
+            document.getElementById('dropperreturn').style.visibility="visible";
+        }
+        function dropperreturn()
+        {
+            document.getElementById('dropperreturn').style.visibility="hidden";
+            document.getElementById('droppersucked').style.animation="return 4s forwards";
+            document.getElementById('sampleclosecap').style.visibility="visible";
+            document.getElementById('standpart3').style.visibility="visible";
+            document.getElementById('standpart4').style.visibility="visible";
+            document.getElementById("step19").style.visibility="hidden";
+            document.getElementById("step20").style.visibility="visible";
+            setTimeout(function()
+         {
+            var x=document.getElementById('123');
+            x.play();
+
+         },3000);
+        }
+        function sampleclose()
+        {
+            setTimeout(function()
+         {
+            var x=document.getElementById('slide1');
+            x.play();
+
+         },4000);
+           document.getElementById('sampleclosecap').style.visibility="hidden";
+            document.getElementById('cap').style.animation="sampleclose 4s forwards";
+            document.getElementById("step20").style.visibility="hidden";
+            
+           setTimeout(function(){
+            document.getElementById('sampleimg2').src="images/sample.png";
+            document.getElementById('cap').style.visibility="hidden";
+        },3800);
+        document.getElementById("step21").style.visibility="visible";
+        document.getElementById('closespect').style.visibility="visible";
+        }
+        function spectclose()
+        {
+            document.getElementById("step21").style.visibility="hidden";
+        document.getElementById('closespect').style.visibility="hidden";
+        document.getElementById('silversomething').style.animation="slideclose 4s forwards";
+        document.getElementById('closezoompic').style.visibility="visible";
+        document.getElementById("step22").style.visibility="visible";
+        }
+        function closezoom()
+        {
+            document.getElementById("step22").style.visibility="hidden";
+            document.getElementById('closezoompic').style.visibility="hidden";
+            document.getElementById('inside').style.visibility="hidden"; 
+            document.getElementById('nobe').style.visibility="hidden";
+            document.getElementById('silversomething').style.visibility="hidden"; 
+            document.getElementById('closespectbox').style.visibility="visible";
+            document.getElementById("step23").style.visibility="visible";
+            setTimeout(function()
+         {
+            var x=document.getElementById('bnd');
+            x.play();
+
+         },1000);
+        }
+        function closespectbox() {
+            document.getElementById("step23").style.visibility="hidden";
+            document.getElementById('infracap').style.animation="closespectcap 3s forwards";
+            document.getElementById('closespectbox').style.visibility="hidden";
+            document.getElementById("step24").style.visibility="visible";
+            document.getElementById('observetransli').style.visibility="visible";
+            document.getElementById('canva1').style.visibility="hidden";
+            document.getElementById("canvas2").style.visibility="hidden";
+            document.getElementById("canvas3").style.visibility="hidden";
+            setTimeout(function()
+         {
+            var x=document.getElementById('observe22');
+            x.play();
+
+         },1000);
+            
+        }
+        // -------------------------observation part liquid-------------------------------------------------------
+        function observeliquid(){
+        document.getElementById("canva4").style.visibility="visible";
+        setTimeout(function()
+      {
+        var x=document.getElementById('pre14');
+        x.play();
+        playVid2();
+
+      },1000);
+        }
+        
+
+        function playVid2() { 
+  var vid3 = document.getElementById("myVideo2");
+  vid3.play(); 
+    }
+
+function next(){
+    document.getElementById("canva4").style.visibility="hidden";
+    document.getElementById("canva5").style.visibility="visible";
+    setTimeout(function()
+      {
+        var x=document.getElementById('pre17');
+        x.play();
+
+      },1000);
+
+}
+        // ----------------------------solid sample animation strt-----------------------------------------//
+        
+        function samplesolid(){
+          
+            document.getElementById("sampleother").style.visibility="visible";
+           document.getElementById('potas').style.visibility="visible";
+           document.getElementById('step101').style.visibility="hidden";
+           document.getElementById('step102').style.visibility="visible";
+           document.getElementById('sample1').style.visibility="hidden";
+           setTimeout(function()
+      {
+        var x=document.getElementById('potas2');
+        x.play();
+
+      },1000);
+        
+    }
+        function potas()
+        {
+            setTimeout(function()
+      {
+        var x=document.getElementById('mortar234');
+        x.play();
+
+      },1000);
+            
+            document.getElementById("potassium").style.visibility="visible";
+            document.getElementById('step102').style.visibility="hidden"
+           document.getElementById('potas').style.visibility="hidden";
+           document.getElementById('step103').style.visibility="visible";
+           document.getElementById('Mortarappear').style.visibility="visible";
+        }
+        function Mortar(){
+            setTimeout(function()
+      {
+        var x=document.getElementById('ring2');
+        x.play();
+
+      },1500);
+            document.getElementById("Mortar1").style.visibility="visible";
+            document.getElementById('step103').style.visibility="hidden"
+            document.getElementById("Mortarappear").style.visibility="hidden";
+            document.getElementById('step104').style.visibility="visible";
+            document.getElementById("Ring Set").style.visibility="visible";
+        }
+         function Ring (){
+            setTimeout(function()
+      {
+        var x=document.getElementById('spatulavoice');
+        x.play();
+
+      },1000);
+            
+            document.getElementById("Ringfull").style.visibility="visible";
+            document.getElementById('step104').style.visibility="hidden";
+            document.getElementById("Stick").style.visibility="visible";
+            document.getElementById("Ring Set").style.visibility="hidden";
+            
+            document.getElementById('step105').style.visibility="visible";
+            document.getElementById("Spatula appear").style.visibility="visible";
+        }
+        function Spatula(){
+           
+            document.getElementById("Spat").style.visibility="visible";
+            document.getElementById('step105').style.visibility="hidden";
+            document.getElementById("Spatula appear").style.visibility="hidden";
+            document.getElementById('step106').style.visibility="visible";
+            document.getElementById("appear").style.visibility="visible";
+            setTimeout(function()
+      {
+        var x=document.getElementById('infra2');
+        x.play();
+
+      },1000);
+        }
+        function Infrared(){
+            document.getElementById("Image1").style.visibility="visible";
+            document.getElementById('step106').style.visibility="hidden";
+            document.getElementById("appear").style.visibility="hidden";
+            document.getElementById('step107').style.visibility="visible";
+            document.getElementById("potassium").style.visibility='hidden';
+           document.getElementById("kbrhalfimage").style.visibility="visible";
+           document.getElementById("kbrcap").style.visibility="visible";
+           document.getElementById("imagekbrtrans" ).style.visibility='visible';
+            }
+            // -----------------move part------------------------------------------------------
+             function movecapkbr(){
+                document.getElementById('kbrcap').style.animation='movecapkbr 4s forwards';
+                document.getElementById("imagekbrtrans" ).style.visibility='hidden';
+                document.getElementById('step107').style.visibility="hidden";
+                document.getElementById('step108').style.visibility="visible";
+                document.getElementById("spattrans" ).style.visibility='visible';
+              
+            } 
+
+            function movespectula(){
+                document.getElementById('Spat').style.animation="movespectula 3s forwards";
+                document.getElementById("mortar8" ).style.visibility='visible';
+
+
+                setTimeout(function(){
+
+                document.getElementById('Spat').style.visibility="hidden";
+                document.getElementById('spat5').style.visibility="visible";
+                document.getElementById('spat5').style.animation="movespectula2 3s forwards";
+  
+},3000);
+
+                setTimeout(function(){
+
+                document.getElementById('spat5').style.visibility="hidden";
+                document.getElementById('Spat6').style.visibility="visible";
+                document.getElementById('Spat6').style.animation="movespectula3 3s forwards";
+                 document.getElementById("spattrans" ).style.visibility='hidden';
+                 document.getElementById("mortar8" ).style.visibility='hidden';
+                 document.getElementById('step108').style.visibility="hidden";
+                 document.getElementById('step109').style.visibility="visible";
+                 document.getElementById('closekbr').style.visibility="visible";
+  
+},7000);
+            }
+              
+                // document.getElementById("spattrans" ).style.visibility='hidden';
+                // document.getElementById('step108').style.visibility="hidden";
+                // document.getElementById('step109').style.visibility="visible";
+                // document.getElementById('closekbr').style.visibility="visible";
+            
+            function closebox(){
+                document.getElementById('kbrcap').style.animation='closebox 4s forwards';
+                document.getElementById('step109').style.visibility="hidden";
+                document.getElementById('closekbr').style.visibility="hidden";
+                document.getElementById('step110').style.visibility="visible";
+                document.getElementById("solidtrans").style.visibility="visible";
+                document.getElementById('sampleother').style.visibility="hidden";
+                document.getElementById('solidhalf').style.visibility="visible";
+                document.getElementById('solidhalf1').style.visibility="visible";
+                document.getElementById('solidhalf2').style.visibility="visible";
+                document.getElementById('solidcap1').style.visibility="visible";
+            }
+            function opensolidcap(){
+                document.getElementById('solidcap1').style.animation="opensolidcap 4s forwards"; 
+                document.getElementById("solidtrans").style.visibility="hidden";
+                document.getElementById("step110").style.visibility="hidden";
+                document.getElementById("step111").style.visibility="visible";
+                document.getElementById('Spat6').style.visibility="hidden";
+                document.getElementById('Spat1').style.visibility="visible";
+                document.getElementById("ABCD").style.visibility="visible";
+              
+            }
+            function XYZ(){ 
+             
+                document.getElementById('Spat1').style.animation="XYZ 5s forwards";
+                document.getElementById("ABCD").style.visibility="hidden";
+                document.getElementById("step111").style.visibility="hidden";
+                document.getElementById("step112").style.visibility="visible";
+
+                setTimeout(function(){
+    document.getElementById("spatula3").style.animation="movesp4 3s forwards";
+    document.getElementById("Spat1").style.visibility="hidden";
+    document.getElementById("spatula3").style.visibility="visible";
+    },5000);
+
+setTimeout(function(){
+    document.getElementById("spatula4").style.animation="movesp5 5s forwards";
+    document.getElementById("spatula3").style.visibility="hidden";
+    document.getElementById("spatula4").style.visibility="visible";
+    document.getElementById("sample22").style.visibility="visible";
+    
+  
+},8000);
+
+}
+          
+function samplemovecap(){
+    document.getElementById("spatula4").style.visibility="hidde";
+                document.getElementById('solidcap1').style.animation="samplemovecap 4s forwards"
+                document.getElementById("sample22").style.visibility="hidden";
+                document.getElementById("step112").style.visibility="hidden";
+                document.getElementById("step113").style.visibility="visible";
+                document.getElementById("Mortar1").style.visibility="hidden"; 
+                document.getElementById("mortartrans").style.visibility="visible";
+                  document.getElementById("mortar2").style.visibility="visible";
+                  document.getElementById("mortar5").style.visibility="visible";
+                  document.getElementById("mortar6").style.visibility="visible";
+                  document.getElementById("mortar7").style.visibility="visible";
+                }
+            function mix(){
+                document.getElementById("mortar6").style.animation="mix 4s forwards"
+                document.getElementById("mortartrans").style.visibility="hidden";
+                document.getElementById("step113").style.visibility="hidden";
+                document.getElementById("step114").style.visibility="visible";
+            }
+            function ringbig(){
+                // document.getElementById("ringtrans").style.visibility="visible";
+                document.getElementById("Ringfull").style.visibility="hidden";
+                document.getElementById("Stick").style.visibility="hidden";
+                
+                document.getElementById("ringzoom").style.visibility="visible";
+                document.getElementById("ringdown").style.visibility="visible";
+                document.getElementById("ringcap").style.visibility="visible";
+                document.getElementById("stick").style.visibility="visible";
+                document.getElementById("step114").style.visibility="hidden";
+                document.getElementById("step115").style.visibility="visible";
+            }
+            function ringmove(){
+                document.getElementById("ringcap").style.animation="ringmove 4s forwards"
+                document.getElementById("step115").style.visibility="hidden";
+                document.getElementById("step116").style.visibility="visible";
+                document.getElementById("spattrans11").style.visibility="visible";
+                // document.getElementById("Spat1").style.visibility="hidden";
+                document.getElementById("spatula4").style.visibility="hidden";
+                document.getElementById("Spat2").style.visibility="visible";
+                
+                }
+                function movesp(){
+                    document.getElementById("Spat2").style.animation="movesp 4s forwards";
+                   
+                    setTimeout(function(){
+            document.getElementById('Spat2').style.visibility="hidden";},4000);
+            setTimeout(function(){
+             document.getElementById("spatula2").style.animation="movesp2 4s forwards";
+            document.getElementById('spatula2').style.visibility="visible";},4000);
+            setTimeout(function(){
+            document.getElementById("spatula2").style.visibility="hidden";
+            document.getElementById('Spat3').style.visibility="visible";
+            document.getElementById('pwd1').style.visibility="visible";
+             document.getElementById("pwd1").style.animation="powdr 2s forwards";
+             document.getElementById("spattrans11").style.visibility="hidden";
+           
+        },8000);
+
+            setTimeout(function(){
+                document.getElementById("Spat3").style.animation="movesp3 2s forwards";
+                document.getElementById("step116").style.visibility="hidden";
+                document.getElementById("step117").style.visibility="visible";
+                document.getElementById("sticktrans").style.visibility="visible";
+           },10000);
+           }
+
+           function movesticktrans(){
+            
+            document.getElementById("stick").style.animation="movesticktrans 3s forwards";
+            document.getElementById("step117").style.visibility="hidden";
+                document.getElementById("sticktrans").style.visibility="hidden";
+                                //  --------------------------//
+                document.getElementById("step118").style.visibility="visible";
+                document.getElementById("rotate2").style.visibility="visible";
+                document.getElementById("Image1").style.visibility="hidden"
+                document.getElementById("halfinfra2").style.visibility="visible";
+                document.getElementById("infracap2").style.visibility="visible";
+                 }
+                 function rotate2(){
+                   document.getElementById("infracap2").style.animation="rotate2 4s forwards";
+                    document.getElementById("rotate2").style.visibility="hidden";
+                    document.getElementById("step118").style.visibility="hidden";
+                    document.getElementById("step119").style.visibility="visible";
+                    document.getElementById("zoomtrans").style.visibility="visible";
+                    
+                    }
+                    function zoomimg(){
+                    document.getElementById("zoom").style.visibility="visible";
+                    document.getElementById("handledwn").style.visibility="visible";
+                    document.getElementById("handle").style.visibility="visible";
+                    document.getElementById("zoomtrans").style.visibility="hidden";
+                    document.getElementById("step119").style.visibility="hidden";
+                    document.getElementById("step120").style.visibility="visible";
+                    document.getElementById("handlemove").style.visibility="visible";
+
+                    }
+                    function movehandle(){
+                        document.getElementById("handlemove").style.visibility="hidden";
+                        document.getElementById('handledwn').style.animation="movehandle 3s forwards";
+                        document.getElementById("step120").style.visibility="hidden";
+                        document.getElementById("step121").style.visibility="visible";
+                       
+                        document.getElementById("ringdown").style.visibility="hidden";
+                        document.getElementById("pwd1").style.visibility="hidden";
+                        document.getElementById("ringwid").style.visibility="visible";
+                        document.getElementById("movering").style.visibility="visible";
+
+                    }
+                    function movetoo(){
+                        document.getElementById('ringwid').style.animation="movetoo 3s forwards";
+                        document.getElementById("movering").style.visibility="hidden";
+                        document.getElementById("step121").style.visibility="hidden";
+                        document.getElementById("step122").style.visibility="visible";
+                        document.getElementById("handledwn").style.visibility="hidden";
+                        document.getElementById("handledwn1").style.visibility="visible";
+                        document.getElementById("handletransbox").style.visibility="visible";
+
+                    }
+                    function Handlemoveagain(){
+                        document.getElementById("handledwn1").style.animation="Handlemoveagain 2s forwards"; 
+                        document.getElementById("handletransbox").style.visibility="hidden"; 
+                        document.getElementById("step122").style.visibility="hidden";
+                        document.getElementById("step123").style.visibility="visible";
+                        document.getElementById("zoomout").style.visibility="visible";
+                    }
+                    function zoomoutback(){
+                        document.getElementById("zoom").style.visibility="hidden";
+                        document.getElementById("handledwn").style.visibility="hidden";
+                        document.getElementById("handledwn1").style.visibility="hidden";
+                        document.getElementById("handle").style.visibility="hidden";
+                        document.getElementById("zoomout").style.visibility="hidden";
+                         document.getElementById("Image09").style.visibility="visible";
+                         document.getElementById("step123").style.visibility="hidden";
+                         document.getElementById("step124").style.visibility="visible";
+                         document.getElementById("appearobservation").style.visibility="visible";
+                         
+                         
+                        
+                         }
+                         // --------------------------observation solid---------------------------------------------------------------------
+      function observation(){
+        document.getElementById("canva20").style.visibility="hidden";
+        document.getElementById("canva21").style.visibility="hidden";
+        document.getElementById("canva22").style.visibility="hidden";
+        document.getElementById("canva23").style.visibility="visible";
+        document.getElementById("appearobservation").style.visibility="hidden";
+        
+        playVid1()
+    } 
+        
+       
+    function playVid1() { 
+  var vid3 = document.getElementById("myVideo1");
+ 
+  setTimeout(function()
+      {
+        var x=document.getElementById('pre15');
+        x.play();
+        vid3.play(); 
+
+      },1000);
+        }
+    
+    
+   
+  
+    function nextmap(){
+       document.getElementById("canva23").style.visibility="hidden";
+       document.getElementById("canva24").style.visibility="visible";
+    
+      setTimeout(function()
+      {
+        var x=document.getElementById('pre16');
+        x.play();
+
+      },1000);
+     }
+     
+
+                         
+                  
+                            
+                                 
+
+
+
+
+
+//  ----------------------- observation function liquid------------------------------------------------------------
+
+
+    </script>
+    <style>
+        @keyframes slideclose {
+            0%{transform:rotateZ(-40deg);left:1150px;}
+            100%{transform:rotateZ(0deg);left:1120px;}
+        }
+        @keyframes sampleclose {
+            0%{top:200px;left:550px}
+            33%{top:300px;left:550px}
+            66%{top:300px;left:830px}
+            100%{top:310px;left:830px}
+        }
+        @keyframes return {
+           0%{top:133px;left:1090px;transform:rotateZ(0deg)} 
+        25%{top:90px;left:890px;transform:rotateZ(70deg)}
+            50%{top:90px;left:833;transform:rotateZ(100deg)}
+         100%{top:160px;left:829px;transform:rotate(0deg)}
+        }
+        @keyframes close {
+          0%{top:480px;left:700px;}
+            25%{top:310px;left:700px;}
+            50%{top:310px;left:480px;}
+            100%{top:330px;left:480px;}
+        }
+        @keyframes movesampledeci {
+            0%{top:140px;left:400px; }
+            100%{top:410px;left:580px;}
+        }
+        @keyframes moveside {
+         0%{top:310px;left:475px;}
+         50%{top:310px;left:700px;}
+         100%{top:480px;left:700px;}            
+        }
+        /* @keyframes movesample {
+        0%{top:100px;left:400px;}
+        50%{top:310px;left:700px;}
+        100%{top:450px;left:700px;}
+         } */
+         @keyframes movecap {
+            0%{top:120px;left:420px;}
+            25%{top:85px;left:420px;}
+            50%{top:85px;left:550px;}
+            100%{top:200px;left:550px}
+            
+         }
+         @keyframes sampleout1 {
+            0%{top:410px;left:560px;}
+            50%{top:270px;left:560px;}
+            75%{top:270px;left:810px;}
+            100%{top:341px;left:811px;}
+         }
+         @keyframes rotatecap {
+            100%{transform: rotateX(80deg);height:100px;top:363px}
+         }
+         @keyframes silvermove {
+            100%{transform:rotateZ(-40deg);left:1150px;}
+;            
+         }
+         @keyframes dropper2sample {
+            0%{top:150px;left:827px}
+            22%{top:70px;left:827px}
+            44%{top:70px;left:780px}
+            66%{top:200px;left:780px}
+            88%{top:200px;left:840px}
+            100%{top:270px;left:840px}
+         }
+         @keyframes filling {
+            0%{top:386px;left:843px}
+            100%{top:379px;left:843px;width:11px;height:35px}
+            
+         }
+         @keyframes putspect {
+            0%{top:270px;left:842px;}
+        50%{top:143px;left:842px;}
+          100%{transform:rotateZ(-70deg);top:143px;left:1090px} 
+       
+         }
+         @keyframes drip {
+            0%{top:230px;left:1152px}
+            100%{top:252px;left:1152px}
+            }
+            @keyframes closespectcap {
+            0%{transform: rotateX(80deg);height:100px;top:363px}
+            100%{transform: rotateX(0deg);}
+        }
+
+
+          /* /------------------------ solid sample ------------------------------/ */
+            @keyframes movecapkbr{
+                0%{top:280px;left:483px;}
+                25%{top:280px;left:589px;}
+                /* 50%{top:350px;left:560px;} */
+                100%{top:395px;left:589px;}
+            }
+            /* move spectucla */
+            @keyframes movespectula{
+                0%{top:360;left:1100px;}
+                40%{top:200px;left:1100px;}
+                70%{top:200px;left:500px;}
+                100%{top:300px;left:500px;}
+                /* 50%{top:200px;left:500px;}
+                80%{top:330px;left:730px;}
+                100%{top:360px;left:1100px;}
+             */
+            }
+
+            @keyframes movespectula2 {
+                0%{top:300px;left:500px;}
+                40%{top:200px;left:500px;}
+                80%{top:200px;left:730px;}
+                100%{top:330px;left:730px;}
+             }
+
+            @keyframes movespectula3 {
+                0%{top:330px;left:730px;}
+                40%{top:200px;left:730px;}
+                /* 80%{top:360px;left:1100px;} */
+                100%{top:360px;left:1100px;}
+             }
+             @keyframes closebox{
+                0%{top:395px;left:589px;}
+                25%{top:280px;left:589px;}
+                100%{top:300px;left:485px;}
+             }
+             @keyframes opensolidcap{
+                0%{top:340px; left:280px;}
+                25%{top:280px; left:280px;}
+                75%{top:280px; left:350px;}
+               100%{top:400px; left:350px;}
+
+             } 
+             /* spatula move */
+             @keyframes XYZ{
+                0%{top:360px;left:1100px;}
+                10%{top:200px;left:1100px;}
+                30%{top:200px;left:300px;}
+                100%{top:340px;left:300px;}
+             }
+
+             @keyframes movesp4{
+                0%{top:340px;left:300px;}
+                10%{top:200px;left:300px;}
+                30%{top:200px;left:750px;}
+                100%{top:326px;left:750px;}
+                /* 100%{top:310px;left:1100px;} */
+             }
+             
+             @keyframes movesp5{
+                0%{top:326px;left:750px;}
+                30%{top:180px;left:750px;}
+                60%{top:180px;left:1100px;}
+                100%{top:360px;left:1100px;}
+             }
+             
+                /* 50%{top:260px;left:300px;}
+                60%{top:310px;left:750px;}
+                100%{top:360px;left:1100px;}
+                } */
+                @keyframes samplemovecap{
+                    0%{top:400px; left:350px;}
+                    25%{top:280px; left:350px;}
+                    75%{top:280px; left:280px;}
+                    100%{top:340px; left:280px;}
+                }
+                /* mortar6 move */
+                @keyframes mix{
+                    0%{top:333px;left:700px;}
+                    15%{top:333px;left:730px;}
+                    25%{top:333px;left:700px;}
+                    35%{top:333px;left:730px;}
+                    50%{top:333px;left:700px;}
+                    75%{top:333px;left:730px;}
+                    100%{top:333px;left:700px;}
+                }
+            /* ----------------------------------ringcap move---------------------------------------     */
+             @keyframes ringmove{
+                0%{top:300px; left:900px;}
+                25%{top:270px;left:900px;}
+                50%{top:270px;left:980px;}
+                100%{top:270px;left:980px;}
+             }
+             /* -----------------movespactula----------------------------------------------------------------------- */
+             @keyframes movesp{
+                0%{top:360px;left:1100px;}
+                10%{top:280px;left:1100px;}
+                20%{top:280px;left:744px;}
+                100%{top:331px;left:744px;}
+             }
+             @keyframes movesp2{
+                0%{top:331px;left:744px;}
+                30%{top:238px;left:744px}
+                60%{top:238px;left:929px;}
+                100%{top:267px;left:933px;}
+
+             }
+
+             @keyframes powdr{
+                0%{top:307px;left:937px;}
+                100%{top:316px;left:926px;}
+             }
+
+             @keyframes movesp3{
+                0%{top:267px;left:933px;}
+                100%{top:360px;left:1100px;}
+             }
+
+             /* -------------------------------------------------------------------------- */
+              /* ----------------------------------move stick---------------------------------------------------*/
+             @keyframes movesticktrans{
+                0%{top:210px;left:920px;}
+                20%{top:246px;left:915px;}
+                40%{top:246px;left:928px;}
+                60%{top:246px;left:915px;}
+                80%{top:246px;left:930px;}
+                100%{top:210px;left:920px;}
+
+             }
+            /* ----------------------------------------------------------------------------------------------- */
+             @keyframes rotate2 {
+            /* 100%{transform: rotateX(80deg);height:100px;top:280px;} */
+            0%{height: 68px;}
+            100%{height: 10px;}
+         }
+         @keyframes movehandle {
+            100%{transform:rotateZ(-40deg);left:1330px;top:305px;}
+;            
+         }
+     /* ------------------------------------------------------------------------------------------------------ */
+     @keyframes movetoo {
+        0%{top:300px;left:900px; width:70px;}
+        50%{top:300px;left:1100px;width:40px;}
+        100%{top:340px;left:1324px;width:15px;}
+     }
+     @keyframes Handlemoveagain {
+            100%{transform:rotateZ(-5deg);left:1320px;}
+     
+     }
+
+
+
+                
+    </style>
+
+</head>
+
+<body onload="homepagevoice2()">
+    <div class="col-md-12" style="margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px;"> <a href="https://www.vlab.co.in/"><img src="images/logo-removebg-preview.png" style="height:80px; border: 4px; position: absolute;left:20px;"></a>
+    </div>
+    <div class="col-lg-12 " style="margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px;">
+        <p> <b id="titleh3" style="font-size: x-large; position: absolute; left:400px;"> Identification of Unknown Components Using Spectroscopic Techniques. </b></p>
+                <div class="col-md-12  fix-top" style="margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px;"> <a href="https://www.vlab.co.in/"><img src="images/Chemistry-PNG-High-Quality-Image.png" style="height:60px; border: 4px; position: absolute;left:1380px;"></a>
+    </div>
+    </div>
+    <hr style="outline: auto;margin-top:70px; color:orange">
+    <!-- header end -->
+    <!-- content start -->
+    
+    
+        <div class="container mt-5" id="canvas1" style="border: 1px solid; background-color: rgb(223, 233, 179);"onload="homepagevoice2()">
+         
+         
+          <audio id="pre9">
+            <source src="audio/step9.mp3" type="audio/mpeg">
+          </audio> 
+            <div class="row">
+                <div class="col-md-12 mt-3" style="height: 550px;">
+                  
+                    <h4 style="text-align: center; background-color:darkslategrey; padding-top: 1px; margin-top:3px;color: orange;">
+                        Identification of Unknown Components Using
+                        Spectroscopic Techniques.</h4>
+                
+                    <h4>Objective:-</h4>
+                    <p >Identification of Unknown Components Using
+                        Spectroscopic Techniques.</p>
+                    <ol>
+                        
+                        <li>Infrared Spectroscopy</li>
+                        
+                    </ol>
+                    <h4>Required Material:-</h4>
+                    <ol>
+                        
+                        <li>(a).<b> Infrared Spectroscopy (Liquid Sample ):</b> 1.Dropper 2.Sample 3.Desiccator 4.Infrared
+                            Spectrometer</li>
+                        (b). <b>Infrared Spectroscopy (Solid Sample):</b> 1. Potasium Bromide 2.Sample 3.Motar & Pestle 4.
+                        Ring Set 5.Infrered Spectrometer 6.Spatula
+                        
+                    </ol>
+                    <p><h4>Overview:-</h4></p>
+                    <p>The aim of this experiment is the identification of unknown compounds through a combination of
+                        spectrometer methods. <br>
+                        1. Identification of unknown components using spectroscopic techniques involves analyzing the interaction between the component and electromagnetic radiation. Spectroscopic techniques include a range of methods such as infrared spectroscopy, ultraviolet-visible spectroscopy, nuclear magnetic resonance spectroscopy, mass spectrometry, and X-ray crystallography.  <br>
+
+                        2. In general, spectroscopic techniques can provide valuable information about the composition, structure, and properties of unknown components. By comparing the spectroscopic data of an unknown component to a database of known compounds, it is often possible to identify the component. Additionally, spectroscopic techniques can be used in combination with other analytical techniques, such as chromatography or elemental analysis, to further identify unknown components.
+                    
+                    </p></p>
+                      <span style="left:999px;top:500px; position: absolute;"> <button class="btn" onclick="enterlab()" style="background-color: rgb(22, 222, 236);border-radius: 5px;">ENTER THE LAB</button> </span>
+
+                </div>
+
+            </div>
+
+        </div>
+    <!-- canvas 1 content end  -->
+    <!-- canvas 2 start-->
+    <div class="container-fluid" id="canvas2" style="border:2px solid; visibility:hidden; position: absolute;top:150px;height:575px; background-color:darkslategrey;">
+        <div class="row">
+            <audio id="pre2">
+                <source src="audio/step2.mp3" type="audio/mpeg">
+              </audio>
+            <div class="col-lg-12 ms-auto">
+                <h4 style="text-align:center; padding-top: 1px;color: rgb(226, 125, 10); "> <u> PRECAUTIONS REQUIRED TO BE TAKEN:</u></h4>
+                <div class="col">
+                    <div class="col-lg-12 bg-light mt-3">
+                        <h5 style="padding-top:20px; text-align: center;"> Precuation To be taken in the laboratory are
+                            as follows:</h5> <br>
+                        <ol>
+                            <li> <b>Don't eat or drink anything:</b> Don't forget: You can't eat or drink anything in
+                                the lab. That's to make sure that you don't mix up your drink with a chemical, or hold
+                                your sandwich with dirty hands.</li> <br> <br>
+                            <li><b>Work tidily and carefully:</b>Make sure to keep your workspace tidy during the
+                                experiment. If there's something you don't need any more, just put it away.
+                            </li><br> <br>
+                            <li><b>Move slowly and don't horse around:</b>In the lab, we always move slowly and
+                                carefully. After all, we don't want to break anything, because that can be dangerous
+                                when working with chemicals.</li><br><br>
+                            <li> <b> Wear safely glasses and a lab coat:</b>You should wear lab coats and safety glasses
+                                while in a lab where chemicals are handled.</li><br><br>
+                            <li><b> Listen and read carefully:</b>n the lab, read and listen carefully the instructions
+                                given by instructor or written on the manuals.</li><br><br>
+                        </ol>
+                    </div>
+                    <div class="col-lg-12" style="text-align: right;border-radius: 5px;position: absolute;top: 480px;">
+                        <button class="btn bg-info" onclick="Next()">NEXT</button>
+                    </div>
+                </div>
+                </div>
+                </div>
+    </div>
+    <!-- canvas 3 strt -->
+    <div class="container-fluid mt-2" id="canvas3" style=" visibility: hidden; position: absolute;top:125px">
+        <div class="col-lg-12 bg-info text-center" style="border: 2px solid; ">
+            <audio id="pre3">
+                <source src="audio/step3.mp3" type="audio/mpeg">
+              </audio>
+    <h3> SAFETY EQUIPEMENTS REQUIRED:</h3></div>
+
+  <div class="img text-center" style="background-color: rgb(123, 190, 190);height: 550px;border: 2px solid rgb(201, 156, 89);">
+
+    
+   <img src="images/lab_coat.png"alt="" style ="height:300px; position: absolute; left:50px;"> 
+  <img src="images/images-removebg-preview.png" alt="" style="position: absolute; left: 350px;">
+ <img src="images/th-removebg-preview (1).png" alt=""style ="height:100px; position:absolute; left:800px;top:100px;">
+ <img src="images/th__2_-removebg-preview.png" alt="" style ="height:130px;position: absolute; left:1200px;top:100px">
+</div> 
+<div class="container" style="text-align: justify; border:4px solid rgb(233, 163, 12); position: absolute; top:350px;left:180px;">
+    <div class="row">
+        <div class="col-sm-12" style="color:black;">
+<ul>
+    <li>LAB COAT: The coat protects their street clothes and also serves as a simple uniform. The garment is made from white or light-colored cotton, linen, or cotton polyester blend, allowing it to be washed at high temperature and making it easy to see if it is clean.</li>
+    <LI>HAND GLOVES:To reduce the risk of contamination of health-care workers hands with blood and other body fluids.
+        To reduce the risk of germ dissemination to the environment and of transmission from the health-care worker to the patient and vice versa, as well as from one patient to another.</LI>
+    <LI>LAB GLASSES: Safety glasses can often mount insert frames to mount prescription corrective lenses for users with suboptimal vision</LI>
+    <li>SHOE COVER:In a laboratory environment, a place where scientific experiments, research, and even the manufacture of drugs and chemicals is conducted, cleanliness is of the utmost importance.
+
+        In many ways, the safety and operational efficiency of a laboratory depends on it.</li>
+</ul>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- <div class="col-sm-12" style="text-align: right;border-radius: 5px;"> -->
+    <button class="btn bg-info" onclick="Next1()" style="text-align: right;border-radius: 5px; position: absolute;top: 550px;left: 1430px;">NEXT </button>
+<!-- </div> -->
+</div>
+    <!-- canvas 3 end -->
+
+    <!-- canvas4 start -->
+    <div class="container-fluid" id="canvas4" style=" border:3px solid; height:600px;  position: absolute; top:120px; background-image: url(images/b1.jpg); visibility: hidden;">
+        <audio id="pre4">
+            <source src="audio/step4.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="pre5">
+            <source src="audio/step5.mp3" type="audio/mpeg">
+          </audio>
+        <div  style="text-align: center; top: fix;"> <h2 style="color:goldenrod"> Apparatus ARE USED IN LABORATORY:</h2></div>
+    <img src="images/sample.png" alt="" width="90px" style="margin-top: 20px; margin-left:150px;">
+            
+        <img src="images/dropperwidstand.png" alt="" width="90px" style="margin-top: 20px; margin-left: 300px;visibility: hiden;">
+<img src="images/Desiccator.png" alt="" width="185px" style="position: absolute;top: 22px; left:1115px;">
+
+
+  <!-- <img src="images/infraredfull.png" alt="" style="position: absolute; top:70px; width:159px;left:1300px;"> -->
+  <div class="container" style="text-align: justify; border:3px solid rgb(233, 163, 12); position: absolute; top:293px;left:16px;width:700px;height:135px;">
+    <div class="row">
+        <div class="col-sm-12" style="color: white;">
+<ul>
+    <li>Sample is the specimen solution used  for performing experiment</li>
+    <LI>Dropper is used to transfer small quantities of liquids.</LI>
+    <LI>Desicators are sealable enclousres containing desiccants for preserving moisture senstive item such as cobalt chloride paper for another use.</LI>
+    <li>chemistry  labsto determine the identify of a molecule.</li>
+</ul>
+        </div>
+
+    </div>
+    <img src="images/Screenshot (36).png" style="width:800px;position: absolute; top:-80px;left:710px;">
+
+</div>
+<select id="selectlist2" style="position:absolute; left:250px; top: 450px; cursor:pointer; font-size: 18px; background-color: white; padding-top: 5px; color: #000; padding-bottom: 5px; visibility: font-weight=bold;" onchange="slct_tec2()">
+              
+    <option style="font-weight: bold;" value="">Select Technique</option>
+    <option  style="font-weight: bold;" value="1">Infrared Spectroscopy (Liquid)</option>
+
+    <option style="font-weight: bold;" value="2">Infrared Spectroscopy (Solid)</option>
+    
+            
+    
+    
+                </select>
+                <audio id="pre6">
+                    <source src="audio/step6.mp3" type="audio/mpeg">
+                  </audio>
+                  <audio id="pre7">
+                    <source src="audio/step7.mp3" type="audio/mpeg">
+                  </audio>
+
+         </div>
+         
+        
+    
+    <!-- canvas4 end -->
+
+    <!-- canvas 5 start -->
+    <div class="container-fluid" id="canvas5" style="border: 2px solid rgb(10, 10, 10);height:600px; width:1510px;position: absolute;top: 100px; margin-left: 5px;margin-right: 5px; visibility: hidden;" >
+        <audio id="tube">
+            <source src="audio/tube.mp3" type="audio/mpeg">
+          </audio>
+
+        <div id="canva1" class="container" style="border:2px solid; text-align: center; margin-top: 3px;" ><b STyle="color:orange"> INSTRUCTIONS:</b> <br><p id="step1"><B>STEP:1. Click on the Sample option in the Apparatus Menu to introduce it into the workspace.</B></p>
+<p id="step2" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:2. Click on the Tube option in the Apparatus Menu to introduce it into the workspace.</B></p>
+<p id="step3" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:3. Click on the Desiccator option in the Apparatus Menu to introduce it into the workspace. </B></p>
+<p id="step4" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B> STEP:4. Click on the Infrared Spectrometer option in the Apparatus Menu to introduce it into the workspace. </B></p>
+<p id="step5" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:5. Click on the cap of the Desiccator to open it. </B></p>
+<p id="step6" style="position: absolute;top:20px;left:500px; visibility: hidden;text-align: center;"><B>STEP:6.Now click on the cap again to keep it aside. </B></p>
+
+<p id="step7" style="position: absolute;top:20px;left:600px; visibility: hidden;text-align: center;"><B>STEP:7. To open the sample click on its cork. </B></p>
+<p id="step8" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:8. Click on the sample to place it in the Desiccator.</B></p>
+<p id="step9" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:9.To close the Desiccator, Click on its cap.</B></p>
+<p id="step10" style="position: absolute;top:20px;left:600px; visibility: hidden;"><B>STEP:10.Wait For SomeTime.  </B></p>
+<p id="step11" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:11. Now open the Desicator again to take out the sample.</B></p>
+<p id="step12" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:12.Now click on the cap again to keep it aside. </B></p>
+<p id="step13" style="position: absolute;top:20px;left:600px; visibility: hidden;"><B>STEP:13. Now Take Out The Sample.</B></p>
+<p id="step14" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:14. Now To close the Desiccator, Click on its cap.</B></p>
+<p id="step15" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:15.Click on the cover of Infrared Spectrometer.</B></p>
+<p id="step16" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:16.Click on the cover of Infrared Spectrometer to open it.</B></p>
+<p id="step17" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:17. Click on the handle of Infrared Spectrometer for zoom view.</B></p>
+<p id="step18" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:18.Click on the handle of Infrared Spectrometer to slide it.</B></p>
+<p id="step19" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:19. Click On The Tube.(Until IT Move Back To The Stand.)<B></p>
+<p id="step20" style="position: absolute;top:20px;left:600px; visibility: hidden;"><B>STEP:20.Click On The Sample Cap.</B></p>
+<p id="step21" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:21.Click on the handle of Infrared Spectrometer to slide it Back.</B></p>
+<p id="step22" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:22.Click On The Handle To Minimize The Image. </B></p>
+<p id="step23" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:23.Click on the cover of Infrared Spectrometer. </B></p>
+<p id="step24" style="position: absolute;top:20px;left:500px; visibility: hidden;"><B>STEP:24. Click on Observe button to observe what is happening inside the Infrared Spectrometer. </B></p>
+
+        </div>
+                <div id="canva2" style="border:2px solid; width:300px; float: left; text-align: center;  margin-left:5px; margin-top: 3px; background-color: rgb(223, 231, 208); border-radius: 15px;"> 
+                     <tr>
+                    <td> <b style="background-color: rgb(216, 110, 10);">  Apparatus Menu </b></td><br><hr style="outline-style: solid;">
+                    <td>
+                        <button style="width:90%;border-radius:5px;background-color: darkslategrey;color:bisque; font-size:x-large;"> Sample</button>
+                        <img src="images/transboxrect.png" id="sampleappear"  style="position: absolute;width:190px;left:100px;visibility: hiden;" onclick="sample()"> <br> <br>
+                        <button style="width:90%;border-radius:5px;background-color: darkslategrey; color:bisque;font-size:x-large;">Tube </button>
+                        <img src="images/transboxrect.png" id="tubeappear"  style="position: absolute;width:250px;left:20px;visibility: hidden;" onclick="Tube()"> <br> <br>
+                        <button style="width:90%;border-radius:5px;background-color: darkslategrey; color:bisque;font-size:x-large;">Desiccator</button>
+                        <img src="images/transboxrect.png" id="desiappear"  style="position: absolute;width:190px;left:100px;visibility: hidden;" onclick="Desicators()"> <br> <br> 
+                        <button style="width:90%;border-radius:5px;background-color: darkslategrey; color:bisque;font-size:x-large;">Infrared Spectrometer</button> 
+                        <img src="images/transboxrect.png" id="spectappear"  style="position: absolute;width:190px;left:100px;visibility: hidden;" onclick="InfraredSpec()"> <br> <br> 
+                         <hr style="outline-style: solid;">
+                         <td ><b style="background-color: rgb(216, 95, 24);">Control Menu</b></td> <br>
+                         <hr style="outline-style: solid;">
+                         <button style="border-radius:5px;background-color: darkslategrey;color:bisque; font-size:large;">Observe  </button><br>  <br>
+                         <img src="images/transboxrect.png" id="observetransli" style="position:absolute;width:100px; left:110px;top:485px;visibility:hidden;" onclick="observeliquid()"> 
+                         <button style="border-radius:5px;background-color: darkslategrey; color:bisque;font-size:large; margin-bottom: 15px;">Restart</button>
+                         
+                    </td>
+            
+                </tr>
+                    
+                </div>
+                <!-- ---------------------------------------------------------------------------- -->
+                <div id="canva3" style="float: left; border:2px solid; width:1150px;height:500px;  margin-top:3px;margin-left: 10px; background-image: url(images/b4.jpg);">
+                <img src="images/sample.png" id="img1" alt="" width="70px" style="position: absolute;top:130px;left:400px; visibility: hidden;" >
+               
+                <img id="img2" src="images/dropperwidstand.png" alt="" width="70px" style=" position:absolute;top:150px;left:800px;visibility: hidden;"> <br>
+                <img src="images/sample_half.png" id="wcap" alt="" width="70px" style="position: absolute;top:140px;left:400px; visibility: hidden;"  >
+                <img id="img3"src="images/Desiccator.png" alt="" width="300px" style=" position: absolute;top:290px;left:455px;visibility: hidden;">
+                
+                <img src="images/infraredfull.png" id="img4" alt="" width="250px" style=" position: absolute;left:1095px;top:365px ;visibility: hidden; " >
+                <img src="images/transboxrect.png" id="openpectro" onclick="openspectro()" style="position: absolute;top:420px;left:1100px;width:250px;visibility: hidden;">
+                <img src="images/transboxrect.png" id="dopen" onclick="opendesi()" style="position: absolute;top:350px;left:500px;width:200px;visibility: hidden;">
+                <img src="images/desiccatorcap.png" width="250px" id="dcap" style="position: absolute;top:310px;left:475px;visibility: hidden;" >
+                <img src="images/desiccatorcap.png" width="250px" id="dcap1" style="position: absolute;top:310px;left:475px;visibility: hidden;" >
+                <img src="images/transboxrect.png" id="dopenagain" onclick="opendesiagain()" style="position: absolute;top:350px;left:500px;width:170px;visibility: hidden;">
+                <img src="images/transboxrect.png" id="dside" onclick="moveside()" style="position: absolute;top:310px;left:500px;width:200px;visibility: hidden;">
+                <img src="images/transboxrect.png" id="dsideagain" style="position: absolute;top:310px;left:500px;width:170px;visibility: hidden;" onclick="movesideagain()">
+                <img id="img3"src="images/desiccatordwn.png" id="hlfd" alt="" width="300px" style="position: absolute;top:300px;left:455px;visibility: hidden;">
+                <img src="images/transboxrect.png" id="sampleout" onclick="sampleout()" style="position:absolute;top:420px;left:520px;width:200px;rotate:90deg;visibility:hidden;">
+               
+                <img src="images/transbox.png" id="samplehalf" onclick="movesampledeci()" style="position:absolute;top:130px;left:390px;width:140px;visibility: hidden;">
+                
+                <img src="images/transboxrect.png" id="closedesi"  style="position: absolute;top:480px;left:730px;width:190px;visibility: hidden;"onclick="closedesi()">
+                <img src="images/transboxrect.png" id="closedesiagain"  style="position: absolute;top:480px;left:730px;width:190px;visibility: hidden;"onclick="closedesiagain()">
+                <img id="infracap" src="images/infraredcap.png" alt="" width="94px" style=" position: absolute;top:413px;left:1154px;visibility: hidden; "  >
+                <img src="images/transbox.png" id="rotate" onclick="rotate()"style="position:absolute;top:413px;left:1154px;width:94px;rotate:90deg;visibility:hidden;">
+                <img src="images/transbox.png" id="transforzoom" style="position:absolute;top:430px;left:1170px;
+                 width:100px;visibility: hidden;" onclick="zoom()">
+                <img src="images/zoom.png" id="inside" style="position: absolute;top:30px;left:900px;visibility: hidden;" width="550px">
+                <img src="images/handledwn.png" id="silversomething" style="position: absolute;top:190px;left:1120px;visibility: hidden;" width="70px">
+                
+                <img src="images/handle.png" id="nobe" style="position:absolute;top:120px;left:1110px;visibility: hidden;" width="80px">
+                <img src="images/transbox.png" id="fornobe" style="position:absolute;top:130px;left:1115px;visibility: hidden;" width="100px" onclick="movesilverthing()">
+                <img src="images/dstand.png" id="stand" width="70px" style="position: absolute;top:189px;left:800px;visibility: hidden;">
+                <img src="images/shapewhite2.png" id="dropperfill" width="11px" style="position: absolute;top:386px;left:843px;visibility: hidden;">
+
+                <img src="images/dropper.png" id="dropper" width="15px" style="position: absolute;top:150px;left:827px;visibility: hidden;">
+                <img src="images/transbox.png" id="dropperinsample" width="90px" style="position: absolute;top:150px;left:800px;visibility: hidden;" onclick="movedropper1()">
+                
+                <img src="images/standdown.png" id="standpart1" width="70px" style="position: absolute;top:200px;left:800px;visibility: hidden;">
+                <img src="images/standtop.png" id="standpart2"  width="70px" style="position: absolute;top:195px;left:800px;visibility: hidden;">
+                <img src="images/dropper2.png" id="droppersucked" width="12px" style="position: absolute;top:270px;left:842px;visibility: hidden;">
+                <img src="images/standdown.png" id="standpart4" width="70px" style="position: absolute;top:200px;left:800px;visibility: hidden;">
+                <img src="images/standtop.png" id="standpart3"  width="70px" style="position: absolute;top:195px;left:800px;visibility: hidden;">
+                <img src="images/transbox.png" id="samplein" width="90px" style="position: absolute;top:280px;left:800px;visibility: hidden;" onclick="sampleindropper()">
+                
+                <img src="images/transbox.png" id="sample2spect" width="60px" style="position: absolute;top:280px;left:800px;visibility: hidden;" onclick="sample2spect()">
+                <img src="images/transbox.png" id="dropperreturn" width="50px" style="position: absolute;top:170px;left:1020px;visibility: hidden;" onclick="dropperreturn()">
+                <img src="images/dropwhite.png" id="drop" width="7px"  style="position: absolute;top:230px;left:1152px;visibility: hidden;">
+                <img src="images/transbox.png" id="droptospect" width="60px" style="position: absolute;top:170px;left:1020px;visibility: hidden;" onclick="pour()">
+                <img src="images/sample_half.png" id="sampleimg2" alt="" width="70px" style="position: absolute;top:341px;left:811px; visibility: hidden;" >
+                <!-- <img src="images/dropper.png" id="dummy" width="15px" style="position: absolute;top:143px;left:1090px;rotate:-70deg"> -->
+                <img src="images/cap.png" id="cap" alt="" width="30px" style="position: absolute;top:120px;left:420px; visibility: hidden;" >
+                <img src="images/transboxrect.png" id="cork" onclick="movecapsample()" style="position:absolute;top:125px;left:415px;width:60px;visibility: hidden;">
+                <img src="images/transbox.png" id="sampleclosecap" width="60px" style="position: absolute;top:190px;left:540px;visibility: hidden;" onclick="sampleclose()">
+                <img src="images/transbox.png" id="closespect" width="100px" style="position: absolute;top:120px;left:1110px;visibility: hidden;" onclick="spectclose()">
+                <img src="images/transbox.png" id="closezoompic" width="450px" style="position: absolute;top:90px;left:930px;visibility: hidden;" onclick="closezoom()">
+
+                <img src="images/transboxrect.png" id="closespectbox" width="100px" style="position: absolute;top:390px;left:1150px;visibility: hidden;" onclick="closespectbox()">
+           <div style="position: absolute;top:70px;left:300px;width:250px;visibility: hidden;background-color: #000;" id="clock"><b style="background-color: white;border:2px solid black;position: absolute;top:100px;left:200px;width:140px">Wait For 24 Hours</b>
+            <img src="images/24hours.gif" width="250px" style="position: absolute;top:50px;left:800px">
+
+           </div>
+            </div>
+               
+              
+        </div>
+<!-- ---------------observation---------------------------------------------------------------------------->
+        <div id="canva4"  style="border: 3px solid; width:1520px;height:630px;position: absolute; top:95px; left:0px;background-color: darkslategrey;  visibility:hidden ">
+            <audio id="pre14">
+                <source src="audio/step14.mp3" type="audio/mpeg">
+              </audio>
+            <p style="position:absolute; left:30px;color:rgb(243, 247, 247)"> Step:25. Click on the Observation Button to see the graph on the computer moniter screen. <br>
+            OBSERVATION:  Now observe the zoomed in animationof the Desicator. The ray goes from the IR  Source to beam Splitter,from where if further proceeds to the fixed and movable Mirrors. The reflected rays are merged at the Beam  splitter and proceed towards the Detector for Detection.   
+            </p>
+            <!-- <iframe src="images/infraredanimation (1).mp4" style="width:1200px; height:500px;position:absolute;top:90px; left:120px;"></iframe> -->
+            <video  id="myVideo2" loop="loop" style="width:1200px; height:500px;position:absolute;top:90px; left:120px; " >
+                <source src="images/infraredanimation (1).mp4" type="video/mp4"> 
+            </video>
+            
+            <button style="position: absolute; top:580px;left:1370px; background-color: aqua;" onclick="next()"> OBSERVATION</button>
+            </div>  
+            <!-- ----------------------------observation map------------------------------------------------- -->
+            <div id="canva5" style="border: 3px solid; width:1520px;height:630px;position: absolute; top:95px; left:0px; background-color:darkslategray;  visibility:hidden">
+                <!-- <img src="images/ledframe.png" style="width:1400px;height:600px;position: absolute;top:10px;left:60px;"> -->
+                <audio id="pre17">
+                    <source src="audio/step16.mp3" type="audio/mpeg">
+                  </audio>
+                <b style="position:absolute;top:23px;left:650px;color:white">OBSERVATION</B>
+                    
+                    <img src="images/newplot2.png" style="width:1200px;height:450px;position: absolute;top:70px;left:130px;">
+                  <a href="index.html"> <button style="position: absolute; top:590px;left:1350px; background-color: rgb(174, 154, 95);">RESTART</button></a>
+
+            </div>      
+
+
+
+
+    <!-- canvas5 end -->
+    <!-- ----------------------------------------- -->
+
+    <!-- /canvas 6 start -->
+    <div  class="container-fluid" id="canvas6" style="border: 2px solid rgb(10, 10, 10);height:600px; visibility:hidden; position: absolute;top: 138px;">
+
+        <div id="canva20" class="container" style="border:2px solid; text-align: center; margin-top: 3px;" ><b style="color:orangered"> INSTRUCTIONS:</b> <br><p id="step101"> <b>STEP:1 Click on the Sample option in the Apparatus Menu to introduce it into the workspace.</b> </p>
+<p id="step102" style="position: absolute;top:20px;left:500px; visibility: hidden;"><b> STEP:2 Click on the Potassium Bromide option in the Apparatus Menu to introduce it into the workspace.</b> </p>
+<p id="step103" style="position: absolute;top:20px;left:500px; visibility: hidden;"><b> STEP:3 Click on the Mortar & pestle option in the Apparatus Menu to introduce it into the workspace.</b></p>
+<p id="step104" style="position: absolute;top:20px;left:500px; visibility: hidden;"><b> STEP:4 Click on the Ring Set option in the Apparatus Menu to introduce it into the workspace.</b> </p>
+<p id="step105" style="position: absolute;top:20px;left:500px; visibility: hidden;"><b> STEP:5 Click on the Spatula option in the Apparatus Menu to introduce it into the workspace. </b></p>
+<p id="step106" style="position: absolute;top:20px;left:500px; visibility: hidden;text-align: center;"><b> STEP:6 Click on the Infrared Spectomemter option in the Apparatus Menu to introduce it into the workspace.</b></p>
+<p id="step107" style="position: absolute;top:20px;left:500px; visibility: hidden;"><b> STEP:7 Click on the cap of bottle containing potassium bromide to open it.</b> </p>
+<p id="step108" style="position: absolute;top:20px;left:500px; visibility: hidden;"> <b> STEP:8 Click on the spatula to take potassium bromide from the bottle and put it in the mortar.</b></p>
+<p id="step109" style="position: absolute;top:20px;left:500px; visibility: hidden;" ><b> STEP:9  Click on the cap of potassium bromide to close it.</b> </p>
+<p id="step110" style="position: absolute;top:20px;left:500px; visibility: hidden;"><b> STEP:10 Click on the cap of bottle containing sample to open it.</b></p>
+<p id="step111" style="position: absolute;top:20px;left:500px; visibility: hidden;"><b> STEP:11  Click on the spatula to take sample from the bottle and put it in the mortar.</b> </p>
+<p id="step112" style="position: absolute;top:20px;left:500px; visibility: hidden;"><b> STEP:12  Click on the cap of sample to close it.</b> </p>
+<p id="step113" style="position: absolute;top:20px;left:500px; visibility: hidden;"><b> STEP:13 Click on the pestle to grind potassium bromide and sample.</b> </p>
+<p id="step114" style="position: absolute;top:22px;left:600px; visibility: hidden;"><b> STEP:14 Click on ring for zoom view.</b> </p>
+<p id="step115" style="position: absolute;top:20px;left:600px; visibility: hidden;"><b> STEP:15 Click on the cap of ring to open it.</b> </p>
+<p id="step116" style="position: absolute;top:20px;left:500px; visibility: hidden;"><b> STEP:16 Click on the spatula to take mixture of potassium bromide and sample and put it in the ring.</b> </p>
+<p id="step117" style="position: absolute;top:20px;left:500px; visibility: hidden;"><b> STEP:17 Click on the stick of ring to fix the mixture well, in the ring.</b> </p>
+<p id="step118" style="position: absolute;top:20px;left:500px; visibility: hidden;"><b> STEP:18. Click on the cover of Infrared Spectrometer to open it.</b>  </p>
+<p id="step119" style="position: absolute;top:20px;left:500px; visibility: hidden;"><b> STEP:19. Click on the handle of Infrared Spectrometer for zoom view.</b> </p>
+<p id="step120" style="position: absolute;top:20px;left:500px; visibility: hidden;"><b> STEP:20.  Click on the handle of Infrared Spectrometer to slide it.</b> </p>
+<p id="step121" style="position: absolute;top:20px;left:500px; visibility: hidden;"><b> STEP:21. Click on thr ring containing mixture to put it in the Infrared Spectrometer.</b> </p>
+<p id="step122" style="position: absolute;top:20px;left:500px; visibility: hidden;"><b> STEP:22.Click on the handle of Infrared Spectrometer to slide it back. </b> </p>
+<p id="step123" style="position: absolute;top:20px;left:600px; visibility: hidden;"><b> STEP:23.Click on the handle to close it.</b> </p>
+<p id="step124" style="position: absolute;top:20px;left:500px; visibility: hidden;">  <b> STEP:24. Click on Observe button to observe what is happening inside the Infrared Spectrometer.  </b></p>
+
+
+
+
+
+
+
+        </div>
+                <div id="canva21" style="border:2px solid rgb(18, 40, 40); width:200px; float: left; text-align: center;  margin-left:5px; margin-top: 3px; background-color: rgb(238, 244, 227); border-radius: 15px;"> 
+                    <b style="background-color: rgb(216, 110, 10);">  Apparatus Menu </b></td><hr style="outline-style: solid;">
+                    <!-- --------------------sample--------------------- -->
+                    <button style="width:60%;border-radius:5px;background-color:darkslategray;  color:white; font-size:large;"> Sample</button>
+                        <img src="images/transboxrect.png" width="100px" id="sample1" style="position: absolute;left:70px ;" onclick="samplesolid()">
+                       
+                        <!-- -------------------------potasium------------------------------------------------ -->
+                        <button style="width:60%;border-radius:5px;background-color:darkslategray;font-size:large;color:white;" >Potasium Bromide </button>
+                        <img src="images/transboxrect.png" id="potas"  style="position: absolute;width:130px;left:60px;top:170px;visibility:hidden;"onclick="potas()" > 
+                       
+                      <!-- --------------------------Mortar-------------------------------------------------- -->
+                      <button style="width:60%;border-radius:5px;background-color: darkslategrey;font-size:large;color:white;">Mortar & Pestle</button>
+                        <img src="images/transboxrect.png" id="Mortarappear"  style="position: absolute;width:120px;left:60px; top:230px;visibility:hidden; " onclick="Mortar()">
+                     
+                        <!-- ------------------------Ring Set----------------------------------------------------- -->
+                        <button style="width:60%;border-radius:5px;background-color: darkslategrey;font-size:large;color:white;">Ring Set</button> 
+                        <img src="images/transboxrect.png" id="Ring Set"  style="position: absolute;width:100px;left:60px;visibility: hidden;"onclick="Ring()">
+                        
+                        <!-- ------------------------Spatula-------------------------------------------------------- -->
+                        <button style="width:60%;border-radius:5px;background-color: darkslategrey;font-size:large;color:white;">Spatula</button> 
+                        <img src="images/transboxrect.png" id="Spatula appear"  style="position: absolute;width:100px;left:60px;visibility: hidden;" onclick="Spatula()">
+             
+                <!-- -------------------------------infra--------------------------------------------------- -->
+                <button style="width:70%;border-radius:5px;background-color: darkslategrey;font-size:large;color:white;">Infrared Spectomemter</button> 
+                 <img src="images/transboxrect.png" id="appear" style="position: absolute;width: 128px;left:60px;visibility: hidden;height: 61px;" onclick="Infrared()"> 
+                      
+                        <!-- -------------------------------------------------------------------------- -->
+                       
+                         <!----------------------------------------------------------------------  -->
+                         <hr style="outline-style: solid;">
+                         <td ><b style="background-color: rgb(216, 95, 24);">Control Menu</b></td>
+                         <hr style="outline-style: solid;">
+                         <button style="border-radius:5px;background-color: darkslategrey;font-size:large;color:white;">Observe</button><br>
+                         <!-- <img src="images/transboxrect.png" id="appearobservation" style=" position:absolute; width:80px;top:500px; left:80px; border:2px solid red;visibility: hidden;" onclick="observation()"> -->
+
+                        
+                  
+                
+                </div>
+<!-- div -->
+                <div id="canva22" style="float: left; border:2px solid; width:1260px;height:520px;  margin-top:3px;margin-left: 10px; background-image: url(images/b4.jpg);">
+                <img src="images/table.png"  width="600px; " style="position: absolute; top:390px;left:250px; ">
+                <img src="images/table.png"  width="600px; " style="position: absolute; top:390px;left:850px; ">
+                <img src="images/solidsample.png"  id="sampleother" width="70px;" style="position: absolute; top:335px ; left:280px; visibility: hidden;">
+                <img src="images/potas.png" id="potassium" style="width:100px; visibility: hidden;position: absolute;top:300px;left:480px">
+                <img src="images/mortar.png"  id="Mortar1" style="width:80px; visibility:visible;position: absolute; top:330px;left:710px;visibility: hidden;">
+                <img src="images/ringfull.png" id="Ringfull" style="width:70px;position: absolute;top:348px;left:900px;visibility:hidden" onclick="ringbig()">
+                <img src="images/stick.png" id="Stick" style="width:20px; position: absolute;top:340px;left:1000px;visibility: hidden;"> 
+                <!-- ------------------------------------------------- -->
+                <img src="images/spatula 2.png" id="Spat" style="width:90px;position: absolute;top:360px;left:1100px;visibility: hidden"> 
+                <img src="images/transboxrect.png" id="spattrans" style="width:110px;position:absolute; top:360px;left:1100px;visibility: hidden;" onclick="movespectula()">
+
+                <img src="images/spatulawidsam.png" id="spat5" style="width:110px;position:absolute; top:300px;left:480px;visibility: hidden;" onclick="movespectula2()">
+                <img src="images/spatula 2.png" id="Spat6" style="width:90px;position: absolute;top:360px;left:1100px;visibility: hidden"onclick="movespectula3()"> 
+
+                <img src="images/mortar7.png" id="mortar8" style="position: absolute; width:79px;top:369px;left:711px;visibility:hidden;">
+                <!-- ---------------------------------------------------------- -->
+                <img src="images/infraredfull (1).png" id="Image1" style="width:200px;position: absolute;top:300px;left:1250px;visibility:hidden;">
+                <!-- potasium image -->
+                <img src="images/kbrhalf.png" id="kbrhalfimage" style="width:103px; visibility:hidden;position: absolute;top:300px;left:480px;">
+                <img src="images/kbrcap12.png" id="kbrcap" style="width:95px; visibility:hidden;position: absolute;top:305px;left:483px; ">
+                <img src="images/transboxrect.png" id="imagekbrtrans" style="width:100px;position: absolute;top:300px;left:480px;visibility: hidden;"onclick="movecapkbr()"  >
+                <img src="images/transboxrect.png" id="closekbr" style="width:100px;position:absolute;top:395px;left:589px;visibility:hidden; " onclick="closebox()">
+                <!-- solid sample image -->
+                <img src="images/spatula 2.png" id="Spat1" style="width:90px;position: absolute;top:360px;left:1100px;visibility: hidden">
+
+                <img src="images/spatulawidsam.png" id="spatula3"  style="width:90px;position: absolute; top:340px;left:300px; visibility: hidden" onclick="movesp4()">
+                <img src="images/spatula 2.png" id="spatula4" style="width:90px;position: absolute;top:335px;left:750px;visibility: hidden" onclick="movesp5()">
+
+                <img src="images/solidsamplehalf (1).png" id="solidhalf1" style=" width:70px;position: absolute; top:340px ; left:280px;visibility:hidden;">
+                <img src="images/solidsamplehalf (1).png" id="solidhalf" style=" width:70px;position: absolute; top:340px ; left:280px; visibility:hidden;" >
+                <img src="images/solidsamplehalf (1).png" id="solidhalf2" style=" width:70px;position: absolute; top:340px ; left:280px;visibility:hidden;">
+
+                <img src="images/solidsamplecap.png" id="solidcap1" style="width:70px;position: absolute; top:340px ; left:280px; visibility:hidden;">
+                
+                <img src="images/transboxrect.png" id="solidtrans" style="width:70px;position: absolute;top:330px;left:280px;visibility: hidden; " onclick="opensolidcap()">
+                <img src="images/transboxrect.png" id="sample22" style=" visibility: hidden; position: absolute;top:400px;left:350px;width:100px;" onclick="samplemovecap()">
+                <!-- ----------------------------------------------------------------------------- -->
+                <!-- <img src="images/spatula 2.png" id="Spat1" style="width:90px;position: absolute;top:360px;left:1100px;visibility: hidden"> -->
+                <img src="images/transboxrect.png" id="ABCD" style="position:absolute;width:90px;top:360px;left:1100px;visibility: hidden;" onclick="XYZ()">
+                <!-- --------------Mortar stick------------------------------------ -->
+                <img src="images/mortar4.png" id="mortar2" style="position: absolute; width:89px;top:352px;left:698px;visibility: hidden;">
+                <img src="images/mortar5.png" id="mortar5" style="position: absolute; width:60px;top:400px;left:710px; visibility: hidden;">
+                <!-- ------------------------------------------ring zoom ------------------------------------->
+                <img src="images/ringzoom.png" id="ringzoom" style="width:400px;position: absolute;top:100px;
+                left:750px; visibility:hidden ;">
+               
+                 <img src="images/ringdown.png" id="ringdown" style="width:70px;position: absolute; top:300px;left:900px;visibility: hidden;" >
+                 <img src="images/ringcap.png" id="ringcap" style="width:70px;position: absolute;top:300px;left:900px;visibility: hidden;" onclick="ringmove()">
+                <!-- -------------------------------------------------------------------------- -->
+
+                <!-- <img src="images/stick1.png" id="stick" style="width:25px;position: absolute;top:210px;left:920px;visibility:hidden;">
+                <img src="images/transboxrect.png" id="sticktrans" style="width:100px;position: absolute;top:210px;left:920px;visibility:hidden; border:2px solid red;" onclick="movesticktrans()"> -->
+
+                <!-- -------------------------------------------------------------------------------------------- -->
+                <img src="images/spatula 2.png" id="Spat2" style="width:90px;position: absolute;top:360px;left:1100px;visibility: hidden" >
+
+                <img src="images/spatula 2.png" id="Spat3" style="width:90px;position: absolute;top:267px;left:933px;visibility: hidden" onclick="movesp3()">
+
+                <img src="images/powderzoom.png" id="pwd1" style="width:19px;position: absolute;top:318px;left:931px;visibility: hidden"  onclick="powdr()">
+
+                
+                <img src="images/stick1.png" id="stick" style="width:25px;position: absolute;top:210px;left:920px;visibility:hidden;">
+                <img src="images/transboxrect.png" id="sticktrans" style="width:80px;height:100px;position: absolute;top:210px;left:900px;visibility:hidden; " onclick="movesticktrans()">
+
+                <img src="images/spatulawidsam.png" id="spatula2"  style="width:90px;position: absolute; top:331px;left:744px; visibility: hidden" onclick="movesp2()">
+
+                <img src="images/mortar6.png" id="mortar6" style="position: absolute; visibility:hidden;width:40px;top:333px;left:700px; ">
+                <img src="images/mortar7.png" id="mortar7" style="position: absolute; width:90px;top:360px;left:698px;visibility:hidden;">
+                <img src="images/transboxrect.png" id="mortartrans" style="position: absolute; width:80px;top:330px; left:690px;visibility: hidden; " onclick="mix()">
+
+
+                <!------------------------- ring zoom-------------------------------------------------- -->
+               <!-- <img src="images/ringzoom.png" id="ringzoom" style="width:400px;position: absolute;top:100px;
+                left:750px; visibility:hidden ;"> -->
+<!--                
+                <img src="images/ringdown.png" id="ringdown" style="width:70px;position: absolute; top:300px;left:900px;visibility: hidden;" >
+
+                <img src="images/ringcap.png" id="ringcap" style="width:70px;position: absolute;top:300px;left:900px;visibility: hidden;" onclick="ringmove()">
+                <img src="images/stick1.png" id="stick" style="width:20px;position: absolute;top:210px;left:920px;visibility:hidden;"> -->
+                <img src="images/transboxrect.png" id="ringtrans" style="width:70px;position: absolute;top:348px;left:900px;visibility: hidden;">
+                <!-- --------------------------spat3 move--------------------------------------------------------->
+               
+                <img src="images/transboxrect.png" id="spattrans11" style="width:110px;position:absolute; top:360px;left:1100px;visibility: hidden;"  onclick="movesp()">
+                <!-- --------------------------- new infrared image--------------------------------------- -->
+                    <img src="images/infrared.png" id="halfinfra2" style="width:200px;position: absolute;top:300px;left:1250px;visibility:hidden;">
+                    <img src="images/infraredcap.png" id="infracap2" style="width:78px; height: 68px; position: absolute;top:340px;left:1295px;visibility:hidden; transform-origin: top;">
+                    <img src="images/transboxrect.png" id="rotate2" style="width:78px;height:100px; position: absolute;top:340px;left:1295px;visibility:hidden; " onclick="rotate2() " >
+
+                    <!-- -----------------------------handle zoom------------------------------------------- -->
+                    <img src="images/transboxrect.png" id="zoomtrans" style="width:200px;height:200px; position: absolute;top:300px;left:1250px;visibility:hidden;" onclick="zoomimg()">
+                 <img src="images/zoom.png" id="zoom" style="width:350px;position: absolute;top:200px;left:1170px;visibility: hidden;">
+                 <img src="images/handledwn.png" id="handledwn" style="width:30px;position: absolute;top:310px;left:1320px;visibility: hidden;">
+                 <img src="images/handle.png" id="handle" style="width:40px;position: absolute;top:270px;left:1315px;visibility: hidden;">
+                
+                 <img src="images/transboxrect.png" id="handlemove" style="width:60px; height:100px;position: absolute;top:280px;left:1310px;visibility: hidden;" onclick="movehandle()">
+                 <!-- ------------------------------------------------------------------------------ -->
+                 <img src="images/ringwid.png" id="ringwid" style="width:70px;position: absolute; top:300px;left:900px;visibility: hidden;" >
+                 <img src="images/transboxrect.png" id="movering" style="width:200px;height:200px; position: absolute; top:300px;left:900px;visibility: hidden; "  onclick="movetoo()" >
+                 <!-- ------------------------------------------------------------------------------------- -->
+                 <img src="images/handledwn.png" id="handledwn1" style="width:30px;position: absolute;top:310px;left:1340px;visibility: hidden;">
+                 <img src="images/transboxrect.png" id="handletransbox" style="width:70px;height:100px; position: absolute; top:280px;left:1320px;visibility: hidden; "  onclick="Handlemoveagain()" >
+                 <img src="images/transboxrect.png" id="zoomout" style="width:100px;height: 100px; position: absolute; top:280px;left:1320px;visibility: hidden; "  onclick="zoomoutback()">
+
+                 <!-- -----------------fullinfrared image----------------------------------------------- -->
+<img src="images/infraredfull (1).png" id="Image09" style="width:215px;position: absolute;top:285px;left:1240px;visibility:hidden;">
+
+<!-- ------------------------------------------------------------------------------------------------------------------>
+               </div>
+
+
+
+
+               <!---------------------------------- observation --------------------------------- -->
+               
+               <div id="canva23" style="border: 3px solid; width:1500px;height:595px;position: absolute; top:1px;left:6px;visibility:hidden;background-color: rgb(13, 116, 116);">
+                <audio id="pre15">
+                    <source src="audio/step14.mp3" type="audio/mpeg">
+                  </audio>
+                <img src="images/transboxrect.png" id="appearobservation" style=" position:absolute; width:120px;top:484px; left:50px; border:1px solid white;visibility: hidden;" onclick="observation()">
+                
+                <p >  <b style="position:absolute; left: 400px; text-align: justify; "> STEP: Click on the Observation Button to see the graph on the computer moniter screen.</b> <br>
+                    <b style="position:absolute; left: 400px; text-align: center; color:white;" > OBSERVATION: </b> Now observe the zoomed in animationof the Desicator. The ray goes from the IR  Source to beam Splitter,from where if further proceeds to the fixed and movable Mirrors. The reflected rays are merged at the Beam  splitter and proceed towards the Detector for Detection.   
+                     </p>
+                     <video  id="myVideo1" loop="loop" style="width:1100px; height:400px;position:absolute;top:95px; left:150px; " >
+                        <source src="images/infraredanimation (1).mp4" type="video/mp4"> 
+                    </video>
+            <button style="position: absolute; top:490px;left:1270px; background-color: rgb(202, 174, 88);" onclick="nextmap()"> OBSERVATION</button>
+            </div>
+            <!-- --------------------------------------------------------------------- -->
+            <div id="canva24" style="border: 3px solid; width:1480px;height:595px;position: absolute; top:2px; left:20px; background-color:darkslategray;  visibility:hidden;">
+                <b style="position:absolute;top:23px;left:650px;color:white">OBSERVATION</B>
+                    <audio id="pre16">
+                        <source src="audio/step16.mp3" type="audio/mpeg">
+                      </audio>
+                    <img src="images/newplot2.png" style="width:1200px;height:450px;position: absolute;top:50px;left:130px;">
+                    <button>
+                       <a href="index.html"> <button style="position: absolute; top:550px;left:1350px; background-color: rgb(174, 154, 95);">RESTART</button></a>
+                    
+                    </button>
+
+                    <!--  -->
+                    <audio id="desicator">
+                        <source src="audio/Desicator.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="infra">
+                        <source src="audio/infra.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="cap111">
+                        <source src="audio/cap.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="cork11">
+                        <source src="audio/cork.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="sample11">
+                        <source src="audio/sample11.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="dcap11">
+                        <source src="audio/cap11.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="24hrs">
+                        <source src="audio/24hrs.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="IR">
+                        <source src="audio/abhishek1.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="zoom">
+                        <source src="audio/handlezoom.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="slide">
+                        <source src="audio/handleslide.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="tube">
+                        <source src="audio/Tube.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="samplecap">
+                        <source src="audio/sample cap.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="desiagain">
+                        <source src="audio/Desiccatoragain.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="outsample">
+                        <source src="audio/outsample.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="closecap">
+                        <source src="audio/closecap.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="123">
+                        <source src="audio/sample cap.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="slide1">
+                        <source src="audio/handleslide.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="bnd">
+                        <source src="audio/ir cover.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="observe22">
+                        <source src="audio/oo.mp3" type="audio/mpeg">
+                      </audio>
+                    
+
+
+
+
+
+
+
+                      <!--  -->
+                      <audio id="sample2">
+                        <source src="audio/sample.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="potas2">
+                        <source src="audio/potassium. mp3.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="ring2">
+                        <source src="audio/ring.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="spatulavoice">
+                        <source src="audio/spatula.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="mortar234">
+                        <source src="audio/Mortar.mp3" type="audio/mpeg">
+                      </audio>
+                      <audio id="infra2">
+                        <source src="audio/inf.mp3" type="audio/mpeg">
+                      </audio>
+
+                      
+
+            </div>      
+
+    
+      
+      
+
+    <!-- canvas 6 end -->
+
+                <!-- footer start -->
+                <br>
+
+                <!-- <div class="container-fluid mt-4 bg-dark"> -->
+                 <!-- <div class="row"> -->
+                        <!-- <div class="col-sm-4"> -->
+                            <!-- <h5 style="color:white ;">Community Links:</h5>
+                            <hr style="color:aquamarine">
+                            <a href="">
+                                <p>Sakshat Portal</p>
+                            </a>
+                            <a href="">
+                                <p>Outreach Portal</p>
+                            </a
+                            <a href="">
+                                <p>FAQ: Virtual Labs</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5 style="color:white ;">Contact Us:</h5>
+                            <hr style="color:aquamarine">
+                            <a href="">
+                                <p>Phone: General Information: 011-26582050</p>
+                            </a>
+                            <a href="">
+                                <p>Email: support@vlabs.ac.in</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5 style="color:white ;">Follow Us:
+                                <hr style="color:aquamarine"> <br>
+
+                                <i class="fa-brands fa-twitter" style="color:rgb(84, 186, 191)"></i>
+                                <i class="fa-brands fa-facebook" style="color:rgb(44, 44, 168)"></i>
+                                <i class="fa-brands fa-linkedin" style="color:rgb(96, 157, 222)"></i>
+                        </div>
+                    </div>
+
+                </div> -->
+
+                <!-- footer end --> 
+
+</body>
+
+</html>
